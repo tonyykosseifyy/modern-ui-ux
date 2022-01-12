@@ -1,0 +1,15 @@
+nav.navbar {
+  padding: 6vh 15vw ;
+  background-color: black ;
+  color: white ;
+  display: flex;
+  justify-content: space-between ;
+}
+
+.navbar-links {
+  display: flex ;
+}
+.navbar-links > a {
+  display: block ;
+  margin-right: 15px ;
+}
