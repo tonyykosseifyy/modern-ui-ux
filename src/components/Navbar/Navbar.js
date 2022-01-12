@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import Hamburger from "./Hamburger";
+import { Logo } from "../../assets";
 
 const links = [
   "products",
@@ -13,7 +14,9 @@ const links = [
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo"></div>
+      <div className="navbar-logo">
+        <Logo />
+      </div>
       <div className="navbar-links">
         { links.map(link => (
           <a key={link} href={link}>{link}</a>

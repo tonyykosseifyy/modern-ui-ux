@@ -1,12 +1,16 @@
 nav.navbar {
-  padding: 6vh 15vw ;
+  padding: clamp(30px,9vh,70px) clamp(10px,15vw,100px);
   background-color: white ;
   display: flex;
   justify-content: space-between ;
 }
-
+.navbar-logo {
+  display: grid ;
+  place-items: center;
+}
 .navbar-links {
   display: flex ;
+  align-items: center;
 }
 .navbar-links > a {
   display: block ;
