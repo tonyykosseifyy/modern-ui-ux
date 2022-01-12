@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import Hamburger from "./Hamburger";
 import { Logo } from "../../assets";
@@ -12,6 +12,7 @@ const links = [
 ];
 
 const Navbar = () => {
+  const [ open , setOpen ] = useState(false);
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -22,7 +23,8 @@ const Navbar = () => {
           <a key={link} href={link}>{link}</a>
         ))}
       </div>
-      <Hamburger />
+      <Hamburger open={open} setOpen={setOpen} />
+      <div className={`navbar-mobile-links ${open && "link-active"}`}></div>
     </nav>
   );
 };

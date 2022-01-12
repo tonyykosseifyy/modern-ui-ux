@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Hamburger.css";
 
 
 const toggle = "is-active";
 
 
-const Hamburger = () => {
-  const [ open , setOpen ] = useState(false);
+const Hamburger = ({ open , setOpen }) => {
   return (
     <button 
     className={`hamburger hamburger--collapse ${open && toggle}`}
