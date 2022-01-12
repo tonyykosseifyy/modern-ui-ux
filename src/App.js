@@ -1,15 +1,17 @@
 import React from "react";
 import "./index.css";
-
+import styled from "styled-components";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <AppWrapper>
+      asdasdasdasd
+    </AppWrapper>
   );
 }
 
 
 export default App ;
+
+
+const AppWrapper = styled.main``;
