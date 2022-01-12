@@ -11,11 +11,24 @@ nav.navbar {
 .navbar-links > a {
   display: block ;
   margin-right: 15px ;
+  text-transform: uppercase;
+  font-weight: 700 ;
+  position: relative;
 }
-
-.navbar-links > a:hover {
-  text-decoration: underline;
-  text-decoration-color: black;
+.navbar-links > a::after {
+  content: "";
+  position: absolute ;
+  bottom : -0.5px ;
+  left: 0 ;
+  right: 0 ;
+  height: 2px ;
+  background-color: black ;
+  transform-origin: center ;
+  transform: scaleX(0);
+  transition: transform .3s ease-out ;
+}
+.navbar-links > a:hover::after {
+  transform: scaleX(1);
 }
 
 @media screen and (max-width: 600px) {
