@@ -1,7 +1,6 @@
 nav.navbar {
   padding: 6vh 15vw ;
-  background-color: black ;
-  color: white ;
+  background-color: white ;
   display: flex;
   justify-content: space-between ;
 }

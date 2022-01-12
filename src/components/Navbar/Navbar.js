@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import Hamburger from "./Hamburger";
 
 const links = [
   "products",
@@ -18,6 +19,7 @@ const Navbar = () => {
           <a key={link} href={link}>{link}</a>
         ))}
       </div>
+      <Hamburger />
     </nav>
   );
 };
