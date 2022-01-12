@@ -18,3 +18,10 @@ nav.navbar {
   text-decoration: underline;
   text-decoration-color: black;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar-links {
+    display: none;
+  }
+}
+
