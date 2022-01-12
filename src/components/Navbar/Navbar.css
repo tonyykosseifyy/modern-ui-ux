@@ -48,6 +48,7 @@ nav.navbar {
   transform: scale(0) translateX(-50%);
   transform-origin: center;
   transition: transform .3s ease-out ;
+  box-shadow: -9px 18px 20px -6px rgba(0,0,0,0.44);
 }
 .navbar-mobile-links.link-active {
   transform: scale(1) translateX(-50%);
