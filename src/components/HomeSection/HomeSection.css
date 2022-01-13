@@ -1,0 +1,44 @@
+.homesection {
+  margin-top: 65px ;
+  padding: 0 clamp(10px,16vw,100px);
+
+  display: flex ;
+}
+
+.homesection-left , 
+.homesection-right {
+  flex: .5 ;
+}
+
+
+.homesection-left {
+  display: flex ;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.homesection-left > div.homesection-left-heading {
+  display: flex ;
+  align-items: center;
+}
+.homesection-left-heading > div.homesection-left-new {
+  margin-right: 15px ;
+  padding: 1px; 
+  background-color: black ;
+  color: white ;
+  border-radius: 40% ;
+  height: 30px ;
+  width: 55px ;
+
+  display: grid;
+  place-items: center;
+
+}
+
+.homesection-left-heading h3 {
+  text-transform: uppercase;
+  color: #989CA5; 
+  font-weight: lighter ;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 4px ;
+  margin-top: -6px;
+}
