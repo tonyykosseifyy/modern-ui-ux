@@ -45,13 +45,13 @@ nav.navbar {
   height: 300px;
   background: red;
   border-radius: 5px ;
-  transform: scale(0) translateX(-50%);
+  transform: translateX(-50%) scale(0) ;
   transform-origin: center;
-  transition: transform .3s ease-out ;
+  transition: transform .3s cubic-bezier(0.55, 0.055, 0.675, 0.19); 
   box-shadow: -9px 18px 20px -6px rgba(0,0,0,0.44);
 }
 .navbar-mobile-links.link-active {
-  transform: scale(1) translateX(-50%);
+  transform: translateX(-50%) scale(1) ;
 }
 @media screen and (max-width: 650px) {
   .navbar-links {
