@@ -104,13 +104,22 @@ a.login-link {
   top: 0;
   right: 0 ;
   width: 50vw ;
-  height: 80vh ;
+  height: 60vh ;
   background-color: #EDF2F6 ;
   border-bottom-left-radius: 40% ;
 }
 
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1070px) {
+  .navbar-overlay {
+    width: 65vw;
+  }
+}
+@media screen and (max-width: 820px ) {
+  .navbar-overlay {
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 690px) {
   .navbar-links {
     display: none;
   }
@@ -118,6 +127,6 @@ a.login-link {
     display: flex;
   }
   .navbar-overlay {
-    width: 65vw ;
+    width: 60vw ;
   }
 }
