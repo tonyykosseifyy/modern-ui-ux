@@ -15,6 +15,7 @@ const Navbar = () => {
   const [ open , setOpen ] = useState(false);
   return (
     <nav className="navbar">
+      <div className="navbar-overlay" />
       <div className="navbar-logo">
         <Logo />
       </div>

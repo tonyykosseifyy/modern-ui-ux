@@ -39,7 +39,7 @@ a.login-link {
   border-radius: 50% ;
   background-color: #989CA5 ;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50% , -50%);
 }
@@ -99,6 +99,16 @@ a.login-link {
   transform: translateX(-50%) scale(1) ;
 }
 
+.navbar-overlay {
+  position: absolute ;
+  top: 0;
+  right: 0 ;
+  width: 50vw ;
+  height: 80vh ;
+  background-color: #EDF2F6 ;
+  border-bottom-left-radius: 40% ;
+}
+
 
 @media screen and (max-width: 650px) {
   .navbar-links {
@@ -107,5 +117,7 @@ a.login-link {
   .navbar-mobile-links {
     display: flex;
   }
+  .navbar-overlay {
+    width: 65vw ;
+  }
 }
-
