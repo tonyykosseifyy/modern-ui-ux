@@ -16,7 +16,7 @@ const HomeSection = () => {
         </div>
         <div className="homesection-left-buttons">
           <button className="red-button">schedule a demo</button>
-          <button className="transparent-button"></button>
+          <button className="transparent-button">to see a preview</button>
         </div>
       </div>
       <div className="homesection-right"></div>
