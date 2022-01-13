@@ -84,6 +84,9 @@
 
 .red-button:hover {
   background-color: #FF8582 ;
+  box-shadow: 2px 10px 23px -9px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 2px 10px 23px -9px rgba(0,0,0,0.55);
+  -moz-box-shadow: 2px 10px 23px -9px rgba(0,0,0,0.55);
 }
 .transparent-button {
   background-color: white;
