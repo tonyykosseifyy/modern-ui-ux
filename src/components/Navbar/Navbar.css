@@ -76,6 +76,7 @@ a.login-link {
   margin: 0 auto ;
 }
 .navbar-mobile-links {
+  z-index: 100 ;
   display: none ;
   position: absolute ;
   top: 130px ;
