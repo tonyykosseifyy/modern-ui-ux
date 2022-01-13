@@ -6,10 +6,12 @@
 }
 
 .homesection-left {
-  flex: .45 ;
+  flex: .5 ;
+  min-width: 450px ;
 }
 .homesection-right {
-  flex: .55 ;
+  flex: .5 ;
+  overflow: hidden;
 }
 
 
@@ -47,7 +49,7 @@
 }
 .homesection-left-body {
   max-width: 600px ;
-  padding-top: 40px ;
+  padding-top: 25px ;
 }
 .homesection-left-body > h1 {
   color: #212740;
@@ -61,7 +63,7 @@
 
 .homesection-left-body > p {
   color: #575656; 
-  margin-bottom: 45px ;
+  margin-bottom: 30px ;
 }
 
 .homesection-left-buttons {
@@ -99,16 +101,48 @@
   letter-spacing: 4px ;
 }
 
-.homesection-right {
-  position: relative ;
+@media screen and (max-width: 1150px) {
+  .homesection {
+    flex-direction: column-reverse;
+  }
+  .homesection-left {
+    margin-top: 100px ;
+  }
+  .homesection-left-body > h1 {
+    font-size: 2rem ;
+    line-height: 40px ;
+  }
+  .homesection-left {
+    min-width: 0 ;
+  }
 }
 
+@media screen and (max-width: 900px ) {
+  .homesection-right {
+    display: grid ;
+    place-items: center ;
+  }
+  .homesection-right > img {
+    height: 100% ;
+    width: 100% ;
+    object-fit: contain;
+  }
+}
 
-.homesection-right > img {
-  width: 100% ;
-  height: 100% ;
-  object-fit: contain;
-  min-height: 600px; 
-  margin-top: -90px ;
-  margin-left: 40px ;
+@media screen and (max-width: 690px) {
+  .homesection {
+    padding: 5vh 6vw;
+  }
+}
+
+@media screen and (max-width: 420px ) {
+  .red-button , 
+  .transparent-button {
+    width: 120px ;
+  }
+  .homesection-left-body > h1 {
+    font-size: 1.3rem;
+    line-height: 25px;
+    margin-bottom: 20px ;
+  }
 }

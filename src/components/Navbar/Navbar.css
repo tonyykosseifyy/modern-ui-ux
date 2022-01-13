@@ -108,7 +108,7 @@ a.login-link {
   width: 50vw ;
   height: 60vh ;
   background-color: #EDF2F6 ;
-  border-bottom-left-radius: 30% ;
+  border-bottom-left-radius: 25% ;
 }
 
 @media screen and (max-width: 1070px) {
@@ -130,5 +130,8 @@ a.login-link {
   }
   .navbar-overlay {
     width: 60vw ;
+  }
+  nav.navbar {
+    padding: 5vh 6vw ;
   }
 }
