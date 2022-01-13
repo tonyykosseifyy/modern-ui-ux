@@ -23,7 +23,7 @@
 .homesection-left-heading > div.homesection-left-new {
   margin-right: 15px ;
   padding: 1px; 
-  background-color: black ;
+  background-color: #212740 ;
   color: white ;
   border-radius: 40% ;
   height: 30px ;
@@ -41,4 +41,38 @@
   font-family: 'Barlow', sans-serif;
   letter-spacing: 4px ;
   margin-top: -6px;
+}
+.homesection-left-body {
+  max-width: 600px ;
+  padding-top: 40px ;
+}
+.homesection-left-body > h1 {
+  color: #212740;
+  font-size: 3rem ;
+  text-transform : uppercase; 
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900 ;
+  line-height: 50px ;
+  margin-bottom: 30px ;
+}
+
+.homesection-left-body > p {
+  color: #575656; 
+  margin-bottom: 60px ;
+}
+
+.homesection-left-buttons {
+  display: flex ;
+}
+.red-button {
+  background-color: #FF8582 ;
+  border-radius: 3px ;
+  width: 180px;
+  padding: 20px 0;
+  text-transform: uppercase ;
+  color: white ;
+  font-weight: bold ;
+  outline: none ;
+  border: none  ;
+  cursor: pointer ;
 }
