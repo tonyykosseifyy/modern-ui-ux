@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeSection.css";
-
+import illustration from "../../illustration.svg";
 
 const HomeSection = () => {
   return (
@@ -19,7 +19,9 @@ const HomeSection = () => {
           <button className="transparent-button">to see a preview</button>
         </div>
       </div>
-      <div className="homesection-right"></div>
+      <div className="homesection-right">
+        <img src={illustration} />
+      </div>
     </div>
   );
 };
