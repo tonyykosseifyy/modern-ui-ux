@@ -1,16 +1,16 @@
 nav.navbar {
-  padding: clamp(30px,5vh,70px) clamp(10px,15vw,100px);
+  padding: clamp(30px,7vh,70px) clamp(10px,16vw,100px);
   background-color: white ;
   display: flex;
   justify-content: space-between ;
   position: relative;
-  font-family: 'Barlow', sans-serif;
 }
 nav.navbar a {
   text-transform: uppercase;
   font-weight: 700 ;
   position: relative;
   display: block ;
+  font-family: 'Barlow', sans-serif;
 }
 .navbar-logo {
   display: grid ;
@@ -22,7 +22,10 @@ nav.navbar a {
 }
 
 .navbar-links > a {
-  margin-right: 30px ;
+  margin-right: 40px ;
+}
+.navbar-links > a:last-child {
+  margin-right: 0px ;
 }
 .navbar-links > a.alignSelf {
   align-self: stretch;
@@ -54,6 +57,9 @@ a.login-link {
 }
 .navbar-links > a:hover::after {
   transform: scaleX(1);
+}
+.navbar-links > a.alignSelf {
+  cursor: default;
 }
 .navbar-links > a.alignSelf::after {
   display: none ;
