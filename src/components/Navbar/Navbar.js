@@ -27,9 +27,11 @@ const Navbar = () => {
       </div>
       <Hamburger open={open} setOpen={setOpen} />
       <div className={`navbar-mobile-links ${open && "link-active"}`}>
-        { links.map(link => (
-            <a key={link} href={link}>{link}</a>
-          ))}
+          { links.map(link => 
+          <a key={link} href={link} className={`${link === "login" ? "login-link": link === "" && "alignSelf"}`}>
+            {link === "" ? <div className="bar"/> : link }
+          </a>
+        )}
       </div>
     </nav>
   );

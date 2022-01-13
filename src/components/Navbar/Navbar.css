@@ -67,6 +67,12 @@ a.login-link {
 .navbar-links > a.login-link::after {
   background-color: #989CA5 ;
 }
+.bar {
+  width: 85% ;
+  height: 1px ;
+  background-color: #989CA5 ;
+  margin: 0 auto ;
+}
 .navbar-mobile-links {
   display: none ;
   position: absolute ;
@@ -75,7 +81,7 @@ a.login-link {
   width: 85vw ;
   max-width: 400px ;
   height: 300px;
-  background: red;
+  background: white;
   border-radius: 5px ;
   transform: translateX(-50%) scale(0) ;
   transform-origin: center;
@@ -86,7 +92,9 @@ a.login-link {
   align-items: center;
   justify-content: space-evenly;
 }
-
+.navbar-mobile-links >.alignSelf {
+  align-self: stretch;
+}
 .navbar-mobile-links.link-active {
   transform: translateX(-50%) scale(1) ;
 }
