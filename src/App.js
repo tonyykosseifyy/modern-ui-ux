@@ -3,6 +3,8 @@ import "./index.css";
 import styled from "styled-components";
 import { Navbar , HomeSection } from "./components";
 
+
+
 const App = () => {
   return (
     <AppWrapper className="app">
